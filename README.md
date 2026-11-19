@@ -1,2 +1,4 @@
 # Insurance_Pricing_Fairness
 Auditing auto insurance loss-cost models for fairness across age and gender, with pre-, in- and post-processing mitigation.
+
+This project builds frequency-severity pricing models for auto insurance on public motor datasets (freMTPL2 and dataCar), then audits them against three group-fairness criteria: independence, separation and sufficiency. It compares a GLM baseline with and without the protected attribute, and tests fairness techniques at three stages: reweighing (pre-processing), constrained training (in-processing) and group thresholds (post-processing). It also benchmarks against discrimination-free pricing from Lindholm et al. (2022). Outputs are technical loss costs, not premiums charged by any insurer. Built for ECE 285 (Ethics and Economics of AI), UCSD, Fall 2026.
